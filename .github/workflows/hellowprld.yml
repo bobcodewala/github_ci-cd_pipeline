@@ -1,0 +1,15 @@
+name: Print message on push 
+on:
+    push:
+        branch:
+            - 'master'
+
+jobs:
+    print-message:
+        runs-on:ubuntu-latest
+
+    steps:
+            - name: print on push
+            run: echo "New branch done to master Branch"
+
+
